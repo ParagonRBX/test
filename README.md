@@ -397,6 +397,7 @@ function DiscordLib:Window(text)
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
         local MyAccountBtn2 = Instance.new("TextButton")
+	local MyAccountBtnTitle2 = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
 	local DiscordInfo = Instance.new("TextLabel")
 	local CurrentSettingOpen = Instance.new("TextLabel")
@@ -1083,9 +1084,22 @@ MyAccountBtn2.Name = "MyAccountBtn2"
 	MyAccountBtn2.Size = UDim2.new(0, 160, 0, 30)
 	MyAccountBtn2.AutoButtonColor = false
 	MyAccountBtn2.Font = Enum.Font.SourceSans
-	MyAccountBtn2.Text = ""
+	MyAccountBtn2.Text = "Whitelist section"
 	MyAccountBtn2.TextColor3 = Color3.fromRGB(0, 0, 0)
 	MyAccountBtn2.TextSize = 14.000
+
+MyAccountBtnTitle2.Name = "MyAccountBtnTitle"
+	MyAccountBtnTitle2.Parent = MyAccountBtn
+	MyAccountBtnTitle2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtnTitle2.BackgroundTransparency = 1.000
+	MyAccountBtnTitle2.BorderSizePixel = 0
+	MyAccountBtnTitle2.Position = UDim2.new(0.0759999976, 0, -0.166999996, 0)
+	MyAccountBtnTitle2.Size = UDim2.new(0, 95, 0, 39)
+	MyAccountBtnTitle2.Font = Enum.Font.GothamSemibold
+	MyAccountBtnTitle2.Text = "Whitelist information"
+	MyAccountBtnTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtnTitle2.TextSize = 14.000
+	MyAccountBtnTitle2.TextXAlignment = Enum.TextXAlignment.Left
 
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
