@@ -397,6 +397,8 @@ function DiscordLib:Window(text)
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
         local MyAccountBtn2 = Instance.new("TextButton")
+	local MyAccountBtn1Corner = Instance.new("UICorner")
+	local MyAccountBtn1Title = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
 	local DiscordInfo = Instance.new("TextLabel")
 	local CurrentSettingOpen = Instance.new("TextLabel")
@@ -1083,17 +1085,7 @@ function DiscordLib:Window(text)
 	MyAccountBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
 	MyAccountBtn.TextSize = 14.000
 
-	MyAccountBtn1.Name = "MyAccountBtn1"
-	MyAccountBtn1.Parent = LeftFrame
-	MyAccountBtn1.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
-	MyAccountBtn1.BorderSizePixel = 0
-	MyAccountBtn1.Position = UDim2.new(0.269, 0,0.256, 0)
-	MyAccountBtn1.Size = UDim2.new(0, 160, 0, 30)
-	MyAccountBtn1.AutoButtonColor = false
-	MyAccountBtn1.Font = Enum.Font.SourceSans
-	MyAccountBtn1.Text = ""
-	MyAccountBtn1.TextColor3 = Color3.fromRGB(0, 0, 0)
-	MyAccountBtn1.TextSize = 14.000
+
 
 	MyAccountBtnCorner.CornerRadius = UDim.new(0, 6)
 	MyAccountBtnCorner.Name = "MyAccountBtnCorner"
@@ -1111,6 +1103,36 @@ function DiscordLib:Window(text)
 	MyAccountBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+
+	MyAccountBtn1.Name = "MyAccountBtn1"
+	MyAccountBtn1.Parent = LeftFrame
+	MyAccountBtn1.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
+	MyAccountBtn1.BorderSizePixel = 0
+	MyAccountBtn1.Position = UDim2.new(0.269, 0,0.256, 0)
+	MyAccountBtn1.Size = UDim2.new(0, 160, 0, 30)
+	MyAccountBtn1.AutoButtonColor = false
+	MyAccountBtn1.Font = Enum.Font.SourceSans
+	MyAccountBtn1.Text = ""
+	MyAccountBtn1.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MyAccountBtn1.TextSize = 14.000
+
+MyAccountBtn1Corner.CornerRadius = UDim.new(0, 6)
+	MyAccountBtn1Corner.Name = "MyAccountBtnCorner"
+	MyAccountBtn1Corner.Parent = MyAccountBtn1
+
+	MyAccountBtn1Title.Name = "MyAccountBtnTitle"
+	MyAccountBtn1Title.Parent = MyAccountBtn1
+	MyAccountBtn1Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtn1Title.BackgroundTransparency = 1.000
+	MyAccountBtn1Title.BorderSizePixel = 0
+	MyAccountBtn1Title.Position = UDim2.new(0.0759999976, 0, -0.166999996, 0)
+	MyAccountBtn1Title.Size = UDim2.new(0, 95, 0, 39)
+	MyAccountBtn1Title.Font = Enum.Font.GothamSemibold
+	MyAccountBtn1Title.Text = "My Account"
+	MyAccountBtn1Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtn1Title.TextSize = 14.000
+	MyAccountBtn1Title.TextXAlignment = Enum.TextXAlignment.Left
 
 	SettingsTitle.Name = "SettingsTitle"
 	SettingsTitle.Parent = LeftFrame
