@@ -397,6 +397,7 @@ function DiscordLib:Window(text)
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
         local MyAccountBtn2 = Instance.new("TextButton")
+local MyAccountBtnCorner2 = Instance.new("UICorner")
 	local MyAccountBtnTitle2 = Instance.new("TextLabel")
 	local SettingsTitle = Instance.new("TextLabel")
 	local DiscordInfo = Instance.new("TextLabel")
@@ -1100,6 +1101,9 @@ MyAccountBtnTitle2.Name = "MyAccountBtnTitle"
 	MyAccountBtnTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle2.TextSize = 14.000
 	MyAccountBtnTitle2.TextXAlignment = Enum.TextXAlignment.Left
+	MyAccountBtnCorner2 .CornerRadius = UDim.new(0, 6)
+	MyAccountBtnCorner2 .Name = "MyAccountBtnCorner"
+	MyAccountBtnCorner2 .Parent = MyAccountBtn2
 
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
