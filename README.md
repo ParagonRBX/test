@@ -368,7 +368,8 @@ function DiscordLib:Window(text)
 	local CloseSettingsBtnCircleCorner = Instance.new("UICorner")
 	local CloseSettingsBtnIcon = Instance.new("ImageLabel")
 	local TextLabel = Instance.new("TextLabel")
-	local UserPanel = Instance.new("Frame")
+	local UserPanel = Instanc
+e.new("Frame")
 	local UserSettingsPad = Instance.new("Frame")
 	local UserSettingsPadCorner = Instance.new("UICorner")
 	local UsernameText = Instance.new("TextLabel")
@@ -377,6 +378,7 @@ function DiscordLib:Window(text)
 	local UserSettingsPadUserTagLayout = Instance.new("UIListLayout")
 	local UserSettingsPadTag = Instance.new("TextLabel")
 	local EditBtn = Instance.new("TextButton")
+local EditBtn1 = Instance.new("TextButton")
 	local EditBtnCorner = Instance.new("UICorner")
 	local UserPanelUserIcon = Instance.new("TextButton")
 	local UserPanelUserImage = Instance.new("ImageLabel")
@@ -589,6 +591,34 @@ local MyAccountBtnCorner2 = Instance.new("UICorner")
 	UserSettingsPadTag.TextColor3 = Color3.fromRGB(184, 186, 189)
 	UserSettingsPadTag.TextSize = 13.000
 	UserSettingsPadTag.TextXAlignment = Enum.TextXAlignment.Left
+
+
+EditBtn1.Name = "EditBtn1"
+	EditBtn1.Parent = UserSettingsPad
+	EditBtn1.BackgroundColor3 = Color3.fromRGB(116, 127, 141)
+	EditBtn1.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
+	EditBtn1.Size = UDim2.new(0, 55, 0, 30)
+	EditBtn1.Font = Enum.Font.Gotham
+	EditBtn1.Text = "Edit"
+	EditBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
+	EditBtn1.TextSize = 14.000
+	EditBtn1.AutoButtonColor = false
+	
+	EditBtn1.MouseEnter:Connect(function()
+		TweenService:Create(
+			EditBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(104,114,127)}
+		):Play()
+	end)
+	
+	EditBtn1.MouseLeave:Connect(function()
+		TweenService:Create(
+			EditBtn,
+			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			{BackgroundColor3 = Color3.fromRGB(116, 127, 141)}
+		):Play()
+	end)
 
 	EditBtn.Name = "EditBtn"
 	EditBtn.Parent = UserSettingsPad
@@ -1089,21 +1119,6 @@ MyAccountBtn2.Name = "MyAccountBtn2"
 	MyAccountBtn2.TextColor3 = Color3.fromRGB(0, 0, 0)
 	MyAccountBtn2.TextSize = 14.000
 
-MyAccountBtnTitle2.Name = "MyAccountBtnTitle"
-	MyAccountBtnTitle2.Parent = MyAccountBtn2
-	MyAccountBtnTitle2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	MyAccountBtnTitle2.BackgroundTransparency = 1.000
-	MyAccountBtnTitle2.BorderSizePixel = 0
-	MyAccountBtnTitle2.Position = UDim2.new(0.269, 0,0.256, 0)
-	MyAccountBtnTitle2.Size = UDim2.new(0, 95, 0, 39)
-	MyAccountBtnTitle2.Font = Enum.Font.GothamSemibold
-	MyAccountBtnTitle2.Text = ""
-	MyAccountBtnTitle2.TextColor3 = Color3.fromRGB(255, 255, 255)
-	MyAccountBtnTitle2.TextSize = 14.000
-	MyAccountBtnTitle2.TextXAlignment = Enum.TextXAlignment.Left
-	MyAccountBtnCorner2 .CornerRadius = UDim.new(0, 6)
-	MyAccountBtnCorner2 .Name = "MyAccountBtnCorner"
-	MyAccountBtnCorner2 .Parent = MyAccountBtn2
 
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
