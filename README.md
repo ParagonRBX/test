@@ -398,9 +398,8 @@ local EditBtn1 = Instance.new("TextButton")
 	local MyAccountBtn = Instance.new("TextButton")
 	local MyAccountBtnCorner = Instance.new("UICorner")
 	local MyAccountBtnTitle = Instance.new("TextLabel")
-        local MyAccountBtn2 = Instance.new("TextButton")
-local MyAccountBtnCorner2 = Instance.new("UICorner")
-	local MyAccountBtnTitle2 = Instance.new("TextLabel")
+
+
 	local SettingsTitle = Instance.new("TextLabel")
 	local DiscordInfo = Instance.new("TextLabel")
 	local CurrentSettingOpen = Instance.new("TextLabel")
@@ -593,32 +592,7 @@ local MyAccountBtnCorner2 = Instance.new("UICorner")
 	UserSettingsPadTag.TextXAlignment = Enum.TextXAlignment.Left
 
 
-EditBtn1.Name = "EditBtn1"
-	EditBtn1.Parent = UserSettingsPad
-	EditBtn1.BackgroundColor3 = Color3.fromRGB(116, 127, 141)
-	EditBtn1.Position = UDim2.new(0.797671914, 0, 0.232142866, 0)
-	EditBtn1.Size = UDim2.new(0, 55, 0, 30)
-	EditBtn1.Font = Enum.Font.Gotham
-	EditBtn1.Text = "Edit"
-	EditBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
-	EditBtn1.TextSize = 14.000
-	EditBtn1.AutoButtonColor = false
-	
-	EditBtn1.MouseEnter:Connect(function()
-		TweenService:Create(
-			EditBtn,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{BackgroundColor3 = Color3.fromRGB(104,114,127)}
-		):Play()
-	end)
-	
-	EditBtn1.MouseLeave:Connect(function()
-		TweenService:Create(
-			EditBtn,
-			TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-			{BackgroundColor3 = Color3.fromRGB(116, 127, 141)}
-		):Play()
-	end)
+
 
 	EditBtn.Name = "EditBtn"
 	EditBtn.Parent = UserSettingsPad
@@ -1105,19 +1079,6 @@ EditBtn1.Name = "EditBtn1"
 
 
 
-
-
-MyAccountBtn2.Name = "MyAccountBtn2"
-	MyAccountBtn2.Parent = LeftFrame
-	MyAccountBtn2.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
-	MyAccountBtn2.BorderSizePixel = 0
-	MyAccountBtn2.Position = UDim2.new(0.269, 0,0.256, 0)
-	MyAccountBtn2.Size = UDim2.new(0, 160, 0, 30)
-	MyAccountBtn2.AutoButtonColor = false
-	MyAccountBtn2.Font = Enum.Font.SourceSans
-	MyAccountBtn2.Text = "Whitelist section"
-	MyAccountBtn2.TextColor3 = Color3.fromRGB(0, 0, 0)
-	MyAccountBtn2.TextSize = 14.000
 
 
 	MyAccountBtn.Name = "MyAccountBtn"
