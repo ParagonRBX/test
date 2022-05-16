@@ -1089,11 +1089,11 @@ MyAccountBtn2.Name = "MyAccountBtn2"
 	MyAccountBtn2.TextSize = 14.000
 
 MyAccountBtnTitle2.Name = "MyAccountBtnTitle"
-	MyAccountBtnTitle2.Parent = MyAccountBtn
+	MyAccountBtnTitle2.Parent = MyAccountBtn2
 	MyAccountBtnTitle2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MyAccountBtnTitle2.BackgroundTransparency = 1.000
 	MyAccountBtnTitle2.BorderSizePixel = 0
-	MyAccountBtnTitle2.Position = UDim2.new(0.0759999976, 0, -0.166999996, 0)
+	MyAccountBtnTitle2.Position = UDim2.new(0.269, 0,0.256, 0)
 	MyAccountBtnTitle2.Size = UDim2.new(0, 95, 0, 39)
 	MyAccountBtnTitle2.Font = Enum.Font.GothamSemibold
 	MyAccountBtnTitle2.Text = "Whitelist information"
