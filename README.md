@@ -1106,7 +1106,7 @@ function DiscordLib:Window(text)
 	SettingsTitle.Position = UDim2.new(0.308999985, 0, 0.0450000018, 0)
 	SettingsTitle.Size = UDim2.new(0, 65, 0, 19)
 	SettingsTitle.Font = Enum.Font.GothamBlack
-	SettingsTitle.Text = "SETTINGS"
+	SettingsTitle.Text = "Prime Capitol Editor"
 	SettingsTitle.TextColor3 = Color3.fromRGB(142, 146, 152)
 	SettingsTitle.TextSize = 11.000
 	SettingsTitle.TextXAlignment = Enum.TextXAlignment.Left
