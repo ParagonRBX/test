@@ -1071,6 +1071,22 @@ function DiscordLib:Window(text)
 	LeftFrame.Position = UDim2.new(0, 0, -0.000303059904, 0)
 	LeftFrame.Size = UDim2.new(0, 233, 0, 375)
 
+
+
+
+
+MyAccountBtn2.Name = "MyAccountBtn2"
+	MyAccountBtn2.Parent = LeftFrame
+	MyAccountBtn2.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
+	MyAccountBtn2.BorderSizePixel = 0
+	MyAccountBtn2.Position = UDim2.new(0.269, 0,0.256, 0)
+	MyAccountBtn2.Size = UDim2.new(0, 160, 0, 30)
+	MyAccountBtn2.AutoButtonColor = false
+	MyAccountBtn2.Font = Enum.Font.SourceSans
+	MyAccountBtn2.Text = ""
+	MyAccountBtn2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	MyAccountBtn2.TextSize = 14.000
+
 	MyAccountBtn.Name = "MyAccountBtn"
 	MyAccountBtn.Parent = LeftFrame
 	MyAccountBtn.BackgroundColor3 = Color3.fromRGB(57, 60, 67)
